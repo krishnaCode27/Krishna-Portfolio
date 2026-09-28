@@ -43,10 +43,12 @@ const projects = [
   },
   {
     number: "03",
-    title: "Weather App",
+    title: "Atmos Weather Intelligence",
     description:
-      "A responsive weather application that provides a clean interface for checking weather information using a weather API.",
+      "A responsive weather intelligence application that provides real-time weather information through a clean and user-friendly interface.",
     tags: ["React", "Next.js", "Node.js", "Weather API"],
+    liveUrl: "https://atmosweatherintelligence.netlify.app/",
+    githubUrl: "https://github.com/krishnaCode27/atmos-weather-intelligence",
   },
 ];
 
@@ -307,7 +309,7 @@ export default function Home() {
 
               <div className="mt-10 flex items-center gap-5">
                 <a
-                  href="https://github.com/creationbykrishna"
+                  href="https://github.com/krishnaCode27"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-slate-500 transition duration-300 hover:text-[#B6FF2E]"
@@ -641,12 +643,31 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <button
-                      type="button"
-                      className="w-fit rounded-xl border border-white/10 bg-white/[0.035] px-5 py-3 text-sm font-medium text-slate-300 transition duration-300 hover:border-[#B6FF2E]/30 hover:bg-[#B6FF2E]/10 hover:text-[#B6FF2E]"
-                    >
-                      View Project ↗
-                    </button>
+                    <div className="flex flex-wrap gap-3 lg:justify-end">
+
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-fit rounded-xl bg-[#B6FF2E] px-5 py-3 text-sm font-bold text-[#0D0F12] transition duration-300 hover:-translate-y-1 hover:bg-[#C5FF5D] hover:shadow-[0_0_25px_rgba(182,255,46,0.25)] focus:outline-none focus:ring-2 focus:ring-[#B6FF2E]/60"
+                        >
+                          Live Demo ↗
+                        </a>
+                      )}
+
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-fit rounded-xl border border-white/10 bg-white/[0.035] px-5 py-3 text-sm font-medium text-slate-300 transition duration-300 hover:-translate-y-1 hover:border-[#B6FF2E]/30 hover:bg-[#B6FF2E]/10 hover:text-[#B6FF2E] focus:outline-none focus:ring-2 focus:ring-[#B6FF2E]/40"
+                        >
+                          GitHub ↗
+                        </a>
+                      )}
+
+                    </div>
 
                   </div>
                 </article>
@@ -927,7 +948,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://github.com/creationbykrishna"
+                    href="https://github.com/krishnaCode27"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-xl border border-white/10 bg-white/[0.035] px-6 py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-[#B6FF2E]/40 hover:bg-[#B6FF2E]/10 hover:text-[#B6FF2E]"
