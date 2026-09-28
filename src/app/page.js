@@ -240,7 +240,6 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[1.05fr_.95fr]">
           <Reveal>
             <div className="max-w-3xl">
-
               {/* STATUS */}
 
               <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#B6FF2E]/20 bg-[#B6FF2E]/5 px-4 py-2 text-xs font-medium text-[#B6FF2E] backdrop-blur-xl sm:text-sm">
@@ -337,13 +336,10 @@ export default function Home() {
 
           <Reveal className="delay-200">
             <div className="relative mx-auto w-full max-w-xl">
-
               <div className="absolute -inset-10 rounded-[3rem] bg-[#B6FF2E]/5 blur-3xl" />
 
               <div className="relative rounded-[2rem] border border-white/10 bg-[#23262F]/60 p-3 shadow-2xl backdrop-blur-2xl">
-
                 <div className="rounded-[1.5rem] border border-white/10 bg-[#111418] p-5 sm:p-6">
-
                   {/* WINDOW BAR */}
 
                   <div className="mb-5 flex items-center gap-2">
@@ -357,21 +353,15 @@ export default function Home() {
                   </div>
 
                   <div className="grid gap-5 sm:grid-cols-[1fr_150px]">
-
                     {/* CODE */}
 
                     <div className="rounded-xl border border-white/5 bg-[#0D0F12] p-5 font-mono text-xs leading-7 sm:text-sm">
-
-                      <p className="text-slate-600">
-                        // portfolio.js
-                      </p>
+                      <p className="text-slate-600">// portfolio.js</p>
 
                       <p>
                         <span className="text-[#B6FF2E]">const</span>{" "}
-                        <span className="text-slate-300">
-                          developer
-                        </span>{" "}
-                        = {"{"}
+                        <span className="text-slate-300">developer</span> ={" "}
+                        {"{"}
                       </p>
 
                       <p className="pl-5">
@@ -400,17 +390,12 @@ export default function Home() {
 
                       <p className="pl-5">
                         learning:{" "}
-                        <span className="text-orange-300">
-                          true
-                        </span>
-                        ,
+                        <span className="text-orange-300">true</span>,
                       </p>
 
                       <p className="pl-5">
                         coffee:{" "}
-                        <span className="text-orange-300">
-                          true
-                        </span>
+                        <span className="text-orange-300">true</span>
                       </p>
 
                       <p>{"}"}</p>
@@ -419,7 +404,6 @@ export default function Home() {
                     {/* INFO CARDS */}
 
                     <div className="flex flex-col justify-center gap-4">
-
                       <div className="rounded-xl border border-[#B6FF2E]/10 bg-[#B6FF2E]/5 p-4">
                         <p className="text-[10px] tracking-widest text-slate-600">
                           CURRENT FOCUS
@@ -439,7 +423,6 @@ export default function Home() {
                           Learning &amp; Building
                         </p>
                       </div>
-
                     </div>
                   </div>
 
@@ -448,7 +431,6 @@ export default function Home() {
                   <div className="mt-5 h-1.5 overflow-hidden rounded-full bg-white/5">
                     <div className="h-full w-[72%] rounded-full bg-[#B6FF2E] shadow-[0_0_12px_rgba(182,255,46,0.5)]" />
                   </div>
-
                 </div>
               </div>
             </div>
@@ -465,7 +447,6 @@ export default function Home() {
         className="px-5 py-24 sm:px-10 sm:py-28 lg:px-16"
       >
         <div className="mx-auto max-w-7xl">
-
           <Reveal>
             <SectionHeading
               eyebrow="01 — About"
@@ -476,9 +457,7 @@ export default function Home() {
 
           <Reveal className="mt-14">
             <div className="grid gap-6 lg:grid-cols-[1.4fr_.6fr]">
-
               <div className="rounded-3xl border border-white/10 bg-[#23262F]/45 p-7 backdrop-blur-xl transition duration-500 hover:border-[#B6FF2E]/20 sm:p-10">
-
                 <p className="text-lg leading-9 text-slate-300">
                   I&apos;m currently pursuing my Bachelor of Computer
                   Applications at{" "}
@@ -496,11 +475,9 @@ export default function Home() {
                   that the best way to learn technology is to build real
                   projects, experiment with ideas, and keep improving.
                 </p>
-
               </div>
 
               <div className="rounded-3xl border border-[#B6FF2E]/10 bg-gradient-to-br from-[#B6FF2E]/10 to-[#23262F]/40 p-7 backdrop-blur-xl sm:p-8">
-
                 <p className="text-sm uppercase tracking-[0.2em] text-[#B6FF2E]">
                   Currently
                 </p>
@@ -514,11 +491,9 @@ export default function Home() {
                     value="Intermediate + Actively Learning"
                   />
                 </div>
-
               </div>
             </div>
           </Reveal>
-
         </div>
       </section>
 
@@ -531,7 +506,6 @@ export default function Home() {
         className="border-y border-white/[0.04] bg-[#111418]/40 px-5 py-24 sm:px-10 sm:py-28 lg:px-16"
       >
         <div className="mx-auto max-w-7xl">
-
           <Reveal>
             <SectionHeading
               eyebrow="02 — Skills"
@@ -541,7 +515,6 @@ export default function Home() {
           </Reveal>
 
           <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-
             {Object.entries(skills).map(([category, items], index) => (
               <Reveal
                 key={category}
@@ -554,21 +527,15 @@ export default function Home() {
                 }
               >
                 <div className="group h-full rounded-3xl border border-white/10 bg-[#23262F]/40 p-7 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-[#B6FF2E]/25 hover:bg-[#23262F]/65">
-
                   <div className="flex items-center justify-between">
-
-                    <h3 className="text-lg font-semibold">
-                      {category}
-                    </h3>
+                    <h3 className="text-lg font-semibold">{category}</h3>
 
                     <span className="text-xs text-slate-600 transition group-hover:text-[#B6FF2E]">
                       0{index + 1}
                     </span>
-
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2.5">
-
                     {items.map((item) => (
                       <span
                         key={item}
@@ -577,13 +544,10 @@ export default function Home() {
                         {item}
                       </span>
                     ))}
-
                   </div>
-
                 </div>
               </Reveal>
             ))}
-
           </div>
         </div>
       </section>
@@ -597,7 +561,6 @@ export default function Home() {
         className="px-5 py-24 sm:px-10 sm:py-28 lg:px-16"
       >
         <div className="mx-auto max-w-7xl">
-
           <Reveal>
             <SectionHeading
               eyebrow="03 — Projects"
@@ -607,20 +570,15 @@ export default function Home() {
           </Reveal>
 
           <div className="mt-14 space-y-5">
-
             {projects.map((project) => (
               <Reveal key={project.number}>
-
                 <article className="group rounded-3xl border border-white/10 bg-[#23262F]/40 p-7 backdrop-blur-xl transition duration-500 hover:border-[#B6FF2E]/25 hover:bg-[#23262F]/65 sm:p-9">
-
                   <div className="grid gap-7 lg:grid-cols-[90px_1fr_auto] lg:items-center">
-
                     <span className="font-mono text-sm font-semibold text-[#B6FF2E]">
                       {project.number}
                     </span>
 
                     <div>
-
                       <h3 className="text-xl font-semibold transition duration-300 group-hover:text-[#B6FF2E] sm:text-2xl">
                         {project.title}
                       </h3>
@@ -630,7 +588,6 @@ export default function Home() {
                       </p>
 
                       <div className="mt-5 flex flex-wrap gap-2">
-
                         {project.tags.map((tag) => (
                           <span
                             key={tag}
@@ -639,20 +596,23 @@ export default function Home() {
                             {tag}
                           </span>
                         ))}
-
                       </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-3 lg:justify-end">
+                    {/* =====================================================
+                        PROJECT LINKS
+                    ===================================================== */}
 
+                    <div className="flex flex-wrap gap-3 lg:flex-col">
                       {project.liveUrl && (
                         <a
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-fit rounded-xl bg-[#B6FF2E] px-5 py-3 text-sm font-bold text-[#0D0F12] transition duration-300 hover:-translate-y-1 hover:bg-[#C5FF5D] hover:shadow-[0_0_25px_rgba(182,255,46,0.25)] focus:outline-none focus:ring-2 focus:ring-[#B6FF2E]/60"
+                          className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#B6FF2E] px-5 py-3 text-sm font-bold text-[#0D0F12] transition duration-300 hover:-translate-y-1 hover:bg-[#C5FF5D] hover:shadow-[0_0_25px_rgba(182,255,46,0.2)]"
                         >
-                          Live Demo ↗
+                          Live Demo
+                          <span>↗</span>
                         </a>
                       )}
 
@@ -661,20 +621,17 @@ export default function Home() {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-fit rounded-xl border border-white/10 bg-white/[0.035] px-5 py-3 text-sm font-medium text-slate-300 transition duration-300 hover:-translate-y-1 hover:border-[#B6FF2E]/30 hover:bg-[#B6FF2E]/10 hover:text-[#B6FF2E] focus:outline-none focus:ring-2 focus:ring-[#B6FF2E]/40"
+                          className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.035] px-5 py-3 text-sm font-medium text-slate-300 transition duration-300 hover:-translate-y-1 hover:border-[#B6FF2E]/30 hover:bg-[#B6FF2E]/10 hover:text-[#B6FF2E]"
                         >
-                          GitHub ↗
+                          GitHub
+                          <span>↗</span>
                         </a>
                       )}
-
                     </div>
-
                   </div>
                 </article>
-
               </Reveal>
             ))}
-
           </div>
         </div>
       </section>
@@ -688,7 +645,6 @@ export default function Home() {
         className="border-y border-white/[0.04] bg-[#111418]/40 px-5 py-24 sm:px-10 sm:py-28 lg:px-16"
       >
         <div className="mx-auto max-w-7xl">
-
           <Reveal>
             <SectionHeading
               eyebrow="04 — Education"
@@ -698,17 +654,12 @@ export default function Home() {
           </Reveal>
 
           <Reveal className="mt-14">
-
             <div className="relative rounded-3xl border border-white/10 bg-[#23262F]/40 p-7 backdrop-blur-xl sm:p-10">
-
               <div className="absolute left-7 top-9 h-3 w-3 rounded-full bg-[#B6FF2E] shadow-[0_0_25px_rgba(182,255,46,0.7)] sm:left-10" />
 
               <div className="ml-7 sm:ml-10">
-
                 <div className="flex flex-col justify-between gap-4 sm:flex-row">
-
                   <div>
-
                     <p className="text-sm font-medium text-[#B6FF2E]">
                       2025 — 2028
                     </p>
@@ -720,17 +671,14 @@ export default function Home() {
                     <p className="mt-2 text-slate-400">
                       Vikrant University, Gwalior
                     </p>
-
                   </div>
 
                   <span className="h-fit rounded-full border border-[#B6FF2E]/15 bg-[#B6FF2E]/5 px-4 py-2 text-xs text-[#B6FF2E]">
                     Currently Pursuing
                   </span>
-
                 </div>
               </div>
             </div>
-
           </Reveal>
         </div>
       </section>
@@ -744,7 +692,6 @@ export default function Home() {
         className="px-5 py-24 sm:px-10 sm:py-28 lg:px-16"
       >
         <div className="mx-auto max-w-7xl">
-
           <Reveal>
             <SectionHeading
               eyebrow="05 — Certificates"
@@ -754,7 +701,6 @@ export default function Home() {
           </Reveal>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-
             {certificates.map((certificate, index) => (
               <Reveal
                 key={certificate.title}
@@ -766,9 +712,7 @@ export default function Home() {
                       : ""
                 }
               >
-
                 <div className="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-[#23262F]/40 p-7 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#B6FF2E]/30 hover:bg-[#23262F]/70 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
-
                   {/* Glow */}
 
                   <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[#B6FF2E]/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
@@ -776,7 +720,6 @@ export default function Home() {
                   {/* Certificate Icon */}
 
                   <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-[#B6FF2E]/20 bg-[#B6FF2E]/5 text-[#B6FF2E] transition-all duration-500 group-hover:scale-110 group-hover:border-[#B6FF2E]/50 group-hover:bg-[#B6FF2E]/10 group-hover:shadow-[0_0_25px_rgba(182,255,46,0.2)]">
-
                     <svg
                       className="h-7 w-7"
                       fill="none"
@@ -790,13 +733,11 @@ export default function Home() {
                         d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 12c0 5.591 3.824 10.29 9 11.622C17.176 22.29 21 17.591 21 12c0-1.04-.133-2.049-.382-3.016z"
                       />
                     </svg>
-
                   </div>
 
                   {/* Certificate Content */}
 
                   <div className="relative mt-6">
-
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#B6FF2E]">
                       {certificate.subtitle}
                     </p>
@@ -817,10 +758,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="group/button mt-7 inline-flex items-center gap-2 rounded-xl border border-[#B6FF2E]/30 bg-[#B6FF2E]/10 px-4 py-2.5 text-sm font-semibold text-[#B6FF2E] transition-all duration-300 hover:border-[#B6FF2E] hover:bg-[#B6FF2E] hover:text-[#0D0F12] hover:shadow-[0_0_25px_rgba(182,255,46,0.3)]"
                     >
-
-                      <span>
-                        View Certificate
-                      </span>
+                      <span>View Certificate</span>
 
                       <svg
                         className="h-4 w-4 transition-transform duration-300 group-hover/button:translate-x-1 group-hover/button:-translate-y-0.5"
@@ -835,20 +773,15 @@ export default function Home() {
                           d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                         />
                       </svg>
-
                     </a>
-
                   </div>
 
                   {/* Bottom Accent */}
 
                   <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#B6FF2E] shadow-[0_0_12px_rgba(182,255,46,0.8)] transition-all duration-500 group-hover:w-full" />
-
                 </div>
-
               </Reveal>
             ))}
-
           </div>
         </div>
       </section>
@@ -862,7 +795,6 @@ export default function Home() {
         className="border-y border-white/[0.04] bg-[#111418]/40 px-5 py-24 sm:px-10 sm:py-28 lg:px-16"
       >
         <div className="mx-auto max-w-7xl">
-
           <Reveal>
             <SectionHeading
               eyebrow="06 — Achievement"
@@ -872,17 +804,13 @@ export default function Home() {
           </Reveal>
 
           <Reveal className="mt-14">
-
             <div className="rounded-3xl border border-[#B6FF2E]/10 bg-gradient-to-br from-[#B6FF2E]/10 via-[#23262F]/40 to-transparent p-7 backdrop-blur-xl sm:p-10">
-
               <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-
                 <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-[#B6FF2E]/20 bg-[#B6FF2E]/5 text-2xl">
                   🏆
                 </div>
 
                 <div>
-
                   <p className="text-sm uppercase tracking-[0.2em] text-[#B6FF2E]">
                     Hackathon
                   </p>
@@ -896,12 +824,9 @@ export default function Home() {
                     an AI-driven career guidance and future workforce
                     development solution.
                   </p>
-
                 </div>
-
               </div>
             </div>
-
           </Reveal>
         </div>
       </section>
@@ -915,15 +840,11 @@ export default function Home() {
         className="px-5 py-24 sm:px-10 sm:py-28 lg:px-16"
       >
         <div className="mx-auto max-w-7xl">
-
           <Reveal>
-
             <div className="relative overflow-hidden rounded-[2rem] border border-[#B6FF2E]/10 bg-gradient-to-br from-[#B6FF2E]/10 via-[#23262F]/40 to-transparent p-7 text-center backdrop-blur-xl sm:p-14">
-
               <div className="absolute left-1/2 top-0 h-48 w-48 -translate-x-1/2 rounded-full bg-[#B6FF2E]/10 blur-3xl" />
 
               <div className="relative">
-
                 <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#B6FF2E]">
                   07 — Contact
                 </p>
@@ -939,7 +860,6 @@ export default function Home() {
                 </p>
 
                 <div className="mt-9 flex flex-wrap justify-center gap-4">
-
                   <a
                     href="mailto:krishnaguptaedu.04@gmail.com"
                     className="rounded-xl bg-[#B6FF2E] px-6 py-3.5 text-sm font-bold text-[#0D0F12] shadow-[0_0_25px_rgba(182,255,46,0.15)] transition duration-300 hover:-translate-y-1 hover:bg-[#C5FF5D] hover:shadow-[0_0_35px_rgba(182,255,46,0.3)]"
@@ -964,18 +884,14 @@ export default function Home() {
                   >
                     LinkedIn ↗
                   </a>
-
                 </div>
 
                 <p className="mt-8 text-sm text-slate-500">
                   krishnaguptaedu.04@gmail.com
                 </p>
-
               </div>
             </div>
-
           </Reveal>
-
         </div>
       </section>
 
